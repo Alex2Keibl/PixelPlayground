@@ -30,12 +30,27 @@ function drawPixel(x, y, color) {
 }
 
 function drawHorizontalLine(x, y, color) {
-    drawPixel(x, y, color);
-    drawPixel(x+1, y, color);
-    drawPixel(x+2, y, color);
-    drawPixel(x+3, y, color);
-    drawPixel(x+4, y, color);
+    drawPixel(x, y, "purple");
+    drawPixel(x+1, y, "blue");
+    drawPixel(x+2, y, "green");
+    drawPixel(x+3, y, "yellow");
+    drawPixel(x+4, y, "orange");
+    drawPixel(x+5, y, "red");
+    
 }
+
+function drawVerticalLine(x, y, color) {
+    drawPixel(x, y, "purple");
+    drawPixel(x, y+1, "red");
+    drawPixel(x, y+2, "orange");
+    drawPixel(x, y+3, "yellow");
+    drawPixel(x, y+4, "green");
+    drawPixel(x, y+5, "blue");
+    drawPixel(x, y+6, "purple")
+
+}
+
+
 
 clearScreen("black");
 
